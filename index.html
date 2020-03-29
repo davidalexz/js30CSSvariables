@@ -3,9 +3,27 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href=".css" />
-		<script src="/script.js"></script>
-		<title>Document</title>
+		<script src="/script.js" defer></script>
+		<link rel="stylesheet" href="style.css" />
+
+		<title>Scoped CSS Variables & JS</title>
 	</head>
-	<body></body>
+	<body>
+		<h2>Update CSS Variables with <span class="highlighter">JS</span></h2>
+		<div class="controls">
+			<label for="spacing">Spacing: </label>
+			<input type="range" name="spacing" min="10" max="200" value="10" data-sizing="px" />
+
+			<label for="blur">Blur: </label>
+			<input type="range" name="blur" min="0" max="25" value="10" data-sizing="px" />
+
+			<label for="base">Base Color</label>
+			<input type="color" name="base" value="ffc600" />
+		</div>
+
+		<img
+			src="https://cdn.theculturetrip.com/wp-content/uploads/2017/07/rsz_dennis_jarvis_cluj-1024x683.jpg"
+			alt="cluj"
+		/>
+	</body>
 </html>
